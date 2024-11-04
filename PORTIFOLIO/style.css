@@ -34,9 +34,11 @@ body {
     padding: 15px 30px;
     position: fixed;
 
+    background: 'transparent';
+    transition: all .3s ease-out ;
+
     z-index: 2;
 
-    background: var(--color-black);
 }
 
 .header-title {
@@ -430,42 +432,42 @@ body {
     color: var(--color-white);
 }
 
-/* .wrapper-projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    
-    margin-top: 2rem;
 
-    color: #141313;
-} */
-
-.mySwiper{
+.container-projects {
     height: 100%;
     width: 100%;
-   
-    display: flex;
     
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.mySwiper {
     
-    gap: 20px;
+    height: 100%;
+    width: 100%;
+    max-width: 1020px;
+    
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    height: 500px;
     
     margin-top: 2rem;
 }
 
-.card-project {
-    max-width: 450px;
-    max-height: 540px;
 
+.card-project {
     height: 100%;
     width: 100%;
 
-    padding: 20px;
-    margin: 0px 10px;
+
+    padding: 30px 20px 20px;
+    
     
     position: relative;
     background: var(--color-white);
@@ -478,7 +480,6 @@ body {
 
     z-index: 1;
 }
-
 
 .card-project ::after{
     content: "";
@@ -494,7 +495,6 @@ body {
 }
 
 .image-project {
-    display: flex;
     max-height: 240px;
     max-width: 250px;
 
