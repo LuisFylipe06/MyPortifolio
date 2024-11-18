@@ -433,7 +433,7 @@ body {
 }
 
 
-.container-projects {
+.container-project {
     height: 100%;
     width: 100%;
     
@@ -441,6 +441,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .mySwiper {
@@ -458,6 +459,7 @@ body {
     height: 500px;
     
     margin-top: 2rem;
+    
 }
 
 
@@ -479,6 +481,7 @@ body {
     border-radius: 20px;
 
     z-index: 1;
+    
 }
 
 .card-project ::after{
@@ -664,7 +667,7 @@ color: var(--color-white);
 
     margin-top: auto;
 
-    background: var(--color-black);
+    background: #1f1d1d;
 }
 
 .container-footer {
