@@ -450,7 +450,6 @@ body {
     width: 100%;
     max-width: 1020px;
     
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -705,3 +704,139 @@ color: var(--color-white);
         left: 100%;
     }
 }
+
+/* Ajustes gerais para mobile */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 8px; /* Reduz o tamanho base para telas menores */
+        overflow: hidden;
+    }
+
+    #header {
+        flex-direction: column; /* Empilha o cabeçalho para dispositivos menores */
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        flex-direction: row; /* Menu em coluna para dispositivos móveis */
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px; /* Espaçamento entre itens */
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte do menu */
+    }
+
+    #person {
+        flex-direction: column; /* Alinha os conteúdos verticalmente */
+    }
+
+    .person-content,
+    .person-background {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .person-content div h1 {
+        font-size: 3rem; /* Ajusta o tamanho do texto */
+        line-height: 4rem; /* Ajusta o espaçamento entre linhas */
+    }
+
+    .stacks {
+        flex-wrap: wrap; /* Quebra a linha das stacks */
+        justify-content: center; /* Centraliza as stacks */
+    }
+
+    .stacks ul li {
+        margin: 5px; /* Ajusta o espaçamento entre as stacks */
+    }
+
+    .profile-photo {
+        width: 200px; /* Reduz o tamanho da foto de perfil */
+        height: 200px;
+    }
+
+    .stacks-content {
+        margin-top: 3rem; /* Ajusta o espaçamento */
+    }
+
+    .stacks ul li img {
+        width: 25px; /* Reduz o tamanho dos ícones das stacks */
+    }
+
+    #about {
+        flex-direction: column; /* Organiza os elementos verticalmente */
+    }
+
+    .background-about,
+    .box-about {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .box-about h3,
+    .box-about h4 {
+        margin: 2rem 1rem; /* Ajusta o espaçamento */
+        font-size: 1.6rem;
+    }
+
+
+    .img-wrapper {
+        display: none; /* Oculta a imagem para simplificar */
+    }
+
+    .button-cta {
+        justify-content: center;
+    }
+
+    #projects {
+        padding: 20px;
+    }
+
+    .projects-title h2 {
+        margin: 4rem; /* Ajusta o espaçamento */
+        font-size: 2.5rem; /* Ajusta o tamanho do título */
+    }
+
+    .container-project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-project {
+        max-width: 300px; /* Reduz o tamanho do card */
+        margin: 10px 0;
+    }
+
+    .image-project {
+        max-width: 200px; /* Reduz tamanho da imagem do projeto */
+        max-height: 200px;
+    }
+
+    #contacts {
+        flex-direction: column; /* Alinha contatos verticalmente */
+        height: 100%;
+        padding: 10px;
+    }
+
+    .contacts-title {
+        font-size: 2rem;
+    }
+
+    .contact-item {
+        flex: 1 1 100%; /* Itens ocupam toda a largura em telas pequenas */
+        padding: 1.5rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .contact-item p {
+        font-size: 1.2rem;
+    }
+}
+
+
