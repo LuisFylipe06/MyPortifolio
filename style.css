@@ -709,7 +709,7 @@ color: var(--color-white);
 @media screen and (max-width: 1024px) {
     html {
         font-size: 8px; /* Reduz o tamanho base para telas menores */
-        overflow: hidden;
+        
     }
 
     #header {
