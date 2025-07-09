@@ -269,6 +269,14 @@ body {
 }
 
 
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .links img {
     width: 30px;
     height: 30px;
@@ -681,7 +689,7 @@ color: var(--color-white);
 }
 
 
-@keyframes written_text { /* O keyframes serve para gerenciar animações */
+@keyframes written_text { 
     100%{
         color: var(--color-white);
     }
@@ -708,7 +716,7 @@ color: var(--color-white);
 /* Ajustes gerais para mobile */
 @media screen and (max-width: 1024px) {
     html {
-        font-size: 8px; /* Reduz o tamanho base para telas menores */
+        font-size: 8px; 
         
     }
 
@@ -727,35 +735,34 @@ color: var(--color-white);
     }
 
     .navbar ul li a {
-        font-size: 1.2rem; /* Ajusta o tamanho da fonte do menu */
-    }
+        font-size: 1.2rem; /
 
     #person {
-        flex-direction: column; /* Alinha os conteúdos verticalmente */
+        flex-direction: column; 
     }
 
     .person-content,
     .person-background {
-        width: 100%; /* Ocupa toda a largura disponível */
-        height: auto; /* Ajusta a altura automaticamente */
+        width: 100%; 
+        height: auto; 
     }
 
     .person-content div h1 {
-        font-size: 3rem; /* Ajusta o tamanho do texto */
-        line-height: 4rem; /* Ajusta o espaçamento entre linhas */
+        font-size: 3rem; 
+        line-height: 4rem; 
     }
 
     .stacks {
-        flex-wrap: wrap; /* Quebra a linha das stacks */
-        justify-content: center; /* Centraliza as stacks */
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
 
     .stacks ul li {
-        margin: 5px; /* Ajusta o espaçamento entre as stacks */
+        margin: 5px; 
     }
 
     .profile-photo {
-        width: 200px; /* Reduz o tamanho da foto de perfil */
+        width: 200px; 
         height: 200px;
     }
 
@@ -764,27 +771,27 @@ color: var(--color-white);
     }
 
     .stacks ul li img {
-        width: 25px; /* Reduz o tamanho dos ícones das stacks */
+        width: 25px; 
     }
 
     #about {
-        flex-direction: column; /* Organiza os elementos verticalmente */
+        flex-direction: column; 
     }
 
     .background-about,
     .box-about {
-        width: 100%; /* Ocupa toda a largura disponível */
+        width: 100%; 
     }
 
     .box-about h3,
     .box-about h4 {
-        margin: 2rem 1rem; /* Ajusta o espaçamento */
+        margin: 2rem 1rem; 
         font-size: 1.6rem;
     }
 
 
     .img-wrapper {
-        display: none; /* Oculta a imagem para simplificar */
+        display: none; 
     }
 
     .button-cta {
@@ -796,8 +803,8 @@ color: var(--color-white);
     }
 
     .projects-title h2 {
-        margin: 4rem; /* Ajusta o espaçamento */
-        font-size: 2.5rem; /* Ajusta o tamanho do título */
+        margin: 4rem; 
+        font-size: 2.5rem; 
     }
 
     .container-project {
@@ -806,17 +813,17 @@ color: var(--color-white);
     }
 
     .card-project {
-        max-width: 300px; /* Reduz o tamanho do card */
+        max-width: 300px; 
         margin: 10px 0;
     }
 
     .image-project {
-        max-width: 200px; /* Reduz tamanho da imagem do projeto */
+        max-width: 200px; 
         max-height: 200px;
     }
 
     #contacts {
-        flex-direction: column; /* Alinha contatos verticalmente */
+        flex-direction: column; 
         height: 100%;
         padding: 10px;
     }
@@ -826,7 +833,7 @@ color: var(--color-white);
     }
 
     .contact-item {
-        flex: 1 1 100%; /* Itens ocupam toda a largura em telas pequenas */
+        flex: 1 1 100%; 
         padding: 1.5rem;
     }
 
@@ -839,4 +846,163 @@ color: var(--color-white);
     }
 }
 
+/* Responsividade para tablets e smartphones */
+@media (max-width: 1024px) {
+    #header {
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .person-content, .person-background, .background-about, .box-about {
+        width: 100% !important;
+        min-width: 0;
+    }
+    #person, #about {
+        flex-direction: column;
+        height: auto;
+    }
+    .person-background {
+        height: 350px;
+        min-height: 200px;
+    }
+    .wrapper-profile-photo {
+        margin: 10px auto;
+        padding: 8px;
+    }
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+    .stacks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .stacks ul {
+        margin: 0 5px;
+    }
+    .box-about {
+        padding: 10px;
+    }
+    .section-subtitle h2, .projects-title h2, .contacts-title {
+        font-size: 2rem;
+    }
+    .container-project {
+        flex-direction: column;
+        align-items: center;
+    }
+    swiper-container.mySwiper {
+        --swiper-navigation-size: 20px;
+        --swiper-pagination-bullet-size: 8px;
+        width: 100vw !important;
+        max-width: 100vw;
+    }
+    swiper-slide.card-project {
+        min-width: 90vw;
+        max-width: 95vw;
+    }
+    .image-project img {
+        max-width: 90vw;
+        height: auto;
+    }
+}
 
+@media (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+    #header {
+        flex-direction: column;
+        padding: 5px 2px;
+    }
+    .header-title h1 {
+        font-size: 1.3rem;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    #person, #about {
+ 
+        flex-direction: column;
+        height: auto;
+    }
+    .person-content, .person-background, .background-about, .box-about {
+        width: 100% !important;
+        min-width: 0;
+        padding: 0 5px;
+    }
+    .person-background {
+        align-items: center;
+        position: relative;
+        display: flex;
+        height: 180px;
+        min-height: 120px;
+    }
+    .wrapper-profile-photo {
+        margin: 5px auto;
+        padding: 4px;
+    }
+    .profile-photo {
+        width: 90px;
+        height: 90px;
+    }
+    .person-content div h1 {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+    .stacks-content {
+        margin-top: 2rem;
+    }
+    .stacks ul li img {
+        width: 18px;
+    }
+    .box-about h3, .box-about h4 {
+        font-size: 1.1rem;
+    }
+    .button-cta button {
+        font-size: 1.1rem;
+        padding: 8px 18px;
+    }
+    .projects-title h2 {
+        font-size: 1.5rem;
+    }
+    .container-project {
+        flex-direction: column;
+        align-items: center;
+    }
+    swiper-container.mySwiper {
+        --swiper-navigation-size: 16px;
+        --swiper-pagination-bullet-size: 6px;
+        width: 100vw !important;
+        max-width: 100vw;
+    }
+    swiper-slide.card-project {
+        min-width: 98vw;
+        max-width: 99vw;
+    }
+    .image-project img {
+        max-width: 98vw;
+        height: auto;
+    }
+    #contacts {
+        flex-direction: column;
+        padding: 5px;
+    }
+    .contact-icon-content, .contact-info {
+        font-size: 1rem;
+    }
+    .container-footer h2, .container-footer h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Ajustes extras para garantir responsividade de imagens e swiper */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+}
